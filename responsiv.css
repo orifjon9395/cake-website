@@ -41,6 +41,14 @@
 		margin: auto !important;
 	}
 }
+/*  ! /////////////  650  /////////////*/
+@media (max-width:  650px) {
+	.section-carusel__div .card{
+		width: 70% !important;
+		margin: auto !important;
+	}
+}
+
 /*  ! /////////////  576  /////////////*/
 @media (max-width:  576px) {
 	.icon_nav{
@@ -61,6 +69,9 @@
 		width: 80% !important;
 
 	}
+	.section-carusel__div .card{
+		width: 80% !important;
+	}
 }
 /*  ! /////////////  450 and  320 /////////////*/
 @media (max-width:  450px) {
@@ -73,5 +84,8 @@
 	.mBlog__card {
 		width: 90% !important;
 		margin: auto !important;
+	}
+	.section-carusel__div .card{
+		width: 90% !important;
 	}
 }

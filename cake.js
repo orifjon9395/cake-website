@@ -25,12 +25,12 @@ function scrollFunction() {
 let hover = document.querySelectorAll(".hover")
 
 for (key of hover) {
-  key.onmouseenter = function (event) {
-    this.nextElementSibling.style.backgroundSize = "120%";
+  key.onmouseenter = function () {
+    this.nextElementSibling.style.backgroundSize = "130%";
     this.nextElementSibling.style.transition = ".5s";
   }
   key.onmouseout = function () {
-    this.nextElementSibling.style.backgroundSize = "110%"
+    this.nextElementSibling.style.backgroundSize = "120%"
     this.nextElementSibling.style.transition = ".5s"
   }
 }

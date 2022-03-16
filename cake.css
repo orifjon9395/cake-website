@@ -1,5 +1,4 @@
-@import url(_general.css);
-@import url(responsiv.css);
+
 
 body {
 	line-height: 1;
@@ -399,7 +398,6 @@ nav {
 
 /* ! /////////// section-carusel /////////////*/
 .section-carusel__div {
-	height: calc(650px + (950 - 650) * ((100vw - 320px) / (1600 - 320)));
 	padding-top: calc(100px + (150 - 100) * ((100vw - 320px) / (1600 - 320)));
 	position: relative;
 }
@@ -417,7 +415,7 @@ nav {
 	font-weight: 700;
 	text-align: center;
 	margin-top: calc(20px + (30 - 20) * ((100vw - 320px) / (1600 - 320)));
-	margin-bottom: calc(10px + (20 - 10) * ((100vw - 320px) / (1600 - 320)));
+	margin-bottom: calc(40px + (90 - 40) * ((100vw - 320px) / (1600 - 320)));
 }
 
 .swiper {
@@ -425,17 +423,20 @@ nav {
 	height: 100%;
 }
 
+.swiper-slide{
+	width: 1000%;
+	height: 100%;
+}
 
-.section-carusel__div .swiper-slide {
-	width: 33%;
-	margin: auto;
-	height: calc(513px + (600 - 513) * ((100vw - 1000px) / (1600 - 320)));
+
+.section-carusel__div .card {
+	height: calc(400px + (520 - 400) * ((100vw - 973px) / (1600 - 973)));
 	border-bottom-right-radius: calc(66px + (99 - 66) * ((100vw - 320px) / (1600 - 320)));
 	background-color: #fff5f2;
 	text-align: center;
 	position: relative;
-	padding-left: calc(10px + (15 - 10) * ((100vw - 1000px) / (1600 - 320)));
-	padding-right: calc(10px + (15 - 10) * ((100vw - 1000px) / (1600 - 320)));
+	padding: calc(10px + (15 - 10) * ((100vw - 1000px) / (1600 - 320)));
+
 }
 
 .section-carusel__div .swiper-slide .hover {
@@ -447,40 +448,41 @@ nav {
 
 
 .section-carusel__div .section-carusel__img {
-	width: 92%;
-	margin: auto;
+	width: 100%;
+	/*height: calc(300px + (350 - 300) * ((100vw - 973px) / (1600 - 973)));*/
 	border-bottom-right-radius: calc(36px + (66 - 36) * ((100vw - 320px) / (1600 - 320)));
-	height: calc(250px + (350 - 250) * ((100vw - 1000px) / (1600 - 320)));
+	height: 45%;
 	background: url("./imgs/cuImg.webp") center no-repeat;
-	background-size: 105%;
+	background-size: 120%;
 	transition: .5s;
-	margin-top: calc(5px + (10 - 5) * ((100vw - 320px) / (1600 - 320)));
 }
 
 .section-carusel__div .swiper-slide h2 {
-	font-size: calc(25px + (30 - 20) * ((100vw - 320px) / (1600 - 320)));
+	font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1600 - 320)));
 	font-weight: 700;
 	text-align: center;
-	margin-top: calc(20px + (30 - 20) * ((100vw - 320px) / (1600 - 320)));
-	margin-bottom: calc(18px + (20 - 18) * ((100vw - 320px) / (1600 - 320)));
+	margin-top: calc(15px + (30 - 15) * ((100vw - 320px) / (1600 - 320)));
+	margin-bottom: calc(15px + (20 - 15) * ((100vw - 320px) / (1600 - 320)));
 }
 
 .section-carusel__div .swiper-slide p {
+	width: 90%;
+	margin: auto;
 	font-weight: 400;
 	letter-spacing: .1em;
 	line-height: 1.5em;
-	margin-bottom: calc(15px + (20 - 15) * ((100vw - 320px) / (1600 - 320)));
-	font-size: calc(13px + (16 - 13) * ((100vw - 320px) / (1600 - 320)));
+	margin-bottom: calc(15px + (30 - 15) * ((100vw - 320px) / (1600 - 320)));
+	font-size: calc(9px + (16 - 9) * ((100vw - 320px) / (1600 - 320)));
 }
 
 .section-carusel__div .swiper-slide .btnRed {
-	width: calc(170px + (220 - 170) * ((100vw - 320px) / (1600 - 320)));
-	height: calc(40px + (50 - 40) * ((100vw - 320px) / (1600 - 320)));
+	width: calc(130px + (220 - 130) * ((100vw - 320px) / (1600 - 320)));
+	height: calc(30px + (50 - 30) * ((100vw - 320px) / (1600 - 320)));
+	margin-bottom: calc(15px + (30 - 15) * ((100vw - 320px) / (1600 - 320)));
 }
 
 .section-carusel__div .swiper-slide .btnRed span {
-	font-size: calc(15px + (18 - 15) * ((100vw - 320px) / (1600 - 320)));
-
+	font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1600 - 320)));
 }
 
 .swiperbtn {
