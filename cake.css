@@ -246,6 +246,9 @@ nav {
 }
 
 
+main{
+	background: #FFF5F2;
+}
 /* ! <!-- ! //////////////  MAIN  //////////////-->*/
 .mainHedr {
 	height: calc(650px + (950 - 650) * ((100vw - 320px) / (1600 - 320)));
@@ -402,6 +405,7 @@ nav {
 .section-carusel__div {
 	padding-top: calc(100px + (150 - 100) * ((100vw - 320px) / (1600 - 320)));
 	position: relative;
+	
 }
 
 .section-carusel__div p {
@@ -526,12 +530,16 @@ nav {
 
 
 /* ! /////////// main__about /////////////*/
+.bg-white{
+	background: #ffffff;
+}
 .main__about {
 	display: flex;
 	flex-wrap: wrap;
 	padding-bottom: calc(50px + (100 - 50) * ((100vw -320) / (1600 - 320)));
 	padding-top: calc(30px + (100 - 30) * ((100vw -320) / (1600 - 320)));
 	position: relative;
+
 }
 
 .main__about img {
@@ -597,7 +605,7 @@ nav {
 .mBlog {
 	padding-top: calc(30px + (60 - 30) * ((100vw - 320px) / (1600 - 320)));
 	background: #FFF5F2;
-	padding-bottom: calc(50px + (160 - 50) * ((100vw - 320px) / (1600 - 320)));
+	padding-bottom: calc(40px + (80 - 40) * ((100vw - 320px) / (1600 - 320)));
 }
 
 .mBlog h6 {
@@ -663,17 +671,9 @@ nav {
 
 
 
-
-
-
-/* ! /////////// mVideo /////////////*/
-.mVideo {
-	width: 100%;
-	height: calc(300px + (600 - 300) * ((100vw - 320px) / (1600 - 320)));
-}
-
+/* ! /////////// MAIN-mBlock__card /////////////*/
 .mBlock__card {
-	height: calc(300px + (500 - 300) * ((100vw - 320px) / (1600 - 320)));
+	height: calc(300px + (800 - 300) * ((100vw - 320px) / (1600 - 320)));
 	overflow: hidden;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -685,7 +685,7 @@ nav {
 	-ms-flex-align: center;
 	align-items: center;
 	font-family: "Orelo-sw-bi", serif;
-	background: #FFF5F2;
+	background: #fff;
 }
 
 .carousel {
@@ -705,7 +705,7 @@ nav {
 
 .carousel--item {
 	display: inline-block;
-	width: calc(300px + (500 - 300) * ((100vw - 320px) / (1600 - 320)));
+	width: calc(300px + (700 - 300) * ((100vw - 320px) / (1600 - 320)));
 	padding: 1vw;
 	-webkit-user-select: none;
 	-moz-user-select: none;
@@ -771,9 +771,193 @@ nav {
 /*# sourceMappingURL=style.css.map */
 
 
+/* ! /////////// MAIN-mBlock__card-2 /////////////*/
+#blogPage {
+	width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFF5F2;
+	padding-bottom: 120px;
+}
+
+#blogPage a, a:visited, a:active {
+    color: inherit;
+}
+
+#blogPage .header {
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+    width: 550px;
+    max-width: 95vw;
+    z-index: 2;
+margin: 80px auto;
+}
+
+/*.footer {
+    color: goldenrod;
+    height: 50px;
+    line-height: 50px;
+}*/
+
+#blogPage .title {
+    font-size: 2em;
+    font-weight: bold;
+	line-height: 2;
+}
+
+#blogPage .subtitle {
+    font-size: 0.83em;
+    font-weight: bold;
+}
+
+#blogPage .song__title, .song__year, .song__artist {
+    display: block;
+}
+
+#blogPage .carousel {
+	width: 100% !important;
+    display: flex;
+    align-items: center;
+	justify-content: center;
+    position: relative;
+    padding: 130px 0;
+}
+
+#blogPage .carousel__scene {
+    position: relative;
+    width: 70%;
+    height: 460px;
+    max-width: 95vw;
+    padding-top: 150px;
+    perspective: 100px;
+	margin: 0 auto !important;
+	line-height: 1.5;
+    /*overflow: hidden;*/
+}
+
+#blogPage .carousel__controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: absolute;
+    right: calc(3px + (15 - 3) * ((100vw - 320px) / (1600 - 320)));
+}
+
+#blogPage .previous-button, .next-button {
+    margin: 5px 0;
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 2rem;
+    border: 3px solid  #5E5E5E;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+#blogPage .previous-button:focus, .next-button:focus {
+    outline: none;
+    box-shadow: 0 0 6px 3px #f04605;
+}
+
+#blogPage .carousel__list {
+    width: 100%;
+    height: calc( 150px + (175 - 150) * ((100vw - 320px) / (1600 - 320)));
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    transform: translateZ(-288px);
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    list-style: none;
+    counter-reset: list-counter;
+}
+
+#blogPage .carousel__cell {
+    position: absolute;
+    width: 100%;
+    height:  calc( 140px + (160 - 140) * ((100vw - 320px) / (1600 - 320)));
+    max-width: calc(95vw - 20px);
+    border: 2px solid #5E5E5E;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #f89f86;
+    text-align: center;
+    transition: transform 1s, opacity 1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    counter-increment: list-counter;
+    background-color: #ffffff;
+    /*filter: blur(2px);*/
+}
+
+#blogPage .carousel__cell::before {
+    content: counter(list-counter);
+    color: #f04605;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+
+#blogPage .carousel__cell.selected {
+    color: #f04605;
+    border-color: #f04605;
+    border-width: 3px;
+	padding-bottom: 15px;
+    /*filter: none;*/
+}
+
+#blogPage .carousel__cell.selected::before {
+    color: #f04605;
+}
+
+#blogPage .carousel__cell:nth-child(2) { transform: rotateX( 40deg) translateZ(288px); }
+#blogPage .carousel__cell:nth-child(1) { transform: rotateX(  0deg) translateZ(288px); }
+#blogPage .carousel__cell:nth-child(3) { transform: rotateX( 80deg) translateZ(288px); }
+#blogPage .carousel__cell:nth-child(4) { transform: rotateX(120deg) translateZ(288px); }
+#blogPage .carousel__cell:nth-child(5) { transform: rotateX(160deg) translateZ(288px); }
+#blogPage .carousel__cell:nth-child(6) { transform: rotateX(200deg) translateZ(288px); }
+#blogPage .carousel__cell:nth-child(7) { transform: rotateX(240deg) translateZ(288px); }
+#blogPage .carousel__cell:nth-child(8) { transform: rotateX(280deg) translateZ(288px); }
+#blogPage .carousel__cell:nth-child(9) { transform: rotateX(320deg) translateZ(288px); }
+
+
+
+
+
+/* ! /////////// mVideo /////////////*/
+.mVideo {
+	width: 100%;
+	height: calc(300px + (800 - 300) * ((100vw - 320px) / (1600 - 320)));
+	/*margin-top: calc(50px + (80 - 50) * ((100vw - 320px) / (1600 - 320)));*/
+	/*padding-bottom: calc(50px + (100 - 50) * ((100vw - 320px) / (1600 - 320)));*/
+	background-color: white !important;
+}
+
+
+
+
+
+
+
+
+
+/* ! /////////// Footer /////////////*/
 .footer {
 	width: 100%;
-	background: #FFF5F2;
+	background-color: #FFF5F2;
+		padding-top: calc(70px + (150 - 70) * ((100vw - 320px) / (1600 - 320)));
 }
 
 .footer__box {

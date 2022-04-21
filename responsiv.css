@@ -91,6 +91,10 @@
 		padding-left: 0;
 	}
 
+	#blogPage .carousel__cell{
+		left: 0px !important;
+	}
+
 }
 
 /*  ! /////////////  450 and  320 /////////////*/
